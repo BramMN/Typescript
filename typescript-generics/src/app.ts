@@ -11,9 +11,11 @@
 //   data.split(" ")
 // })
 
-function merge<T, U>(objA: T, objB: U) {
+function merge<T extends object, U extends object>(objA: T, objB: U) {
   return { ...objA, ...objB }
 }
 
 const mergedObj = merge({ name: "Bram", hobbies: ["Sports"] }, { age: 25 })
 const mergedObj2 = merge({ name: "Bram" }, { age: 25 })
+
+console.log(mergedObj)
