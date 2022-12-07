@@ -1,7 +1,7 @@
-import { AutoBind as autobind } from "../decorators/autobind.js"
-import { projectState } from "../state/project-state.js"
-import * as Validation from "../util/validation.js"
-import Cmp from "./base-component.js"
+import { AutoBind as autobind } from "../decorators/autobind"
+import { projectState } from "../state/project-state"
+import * as Validation from "../util/validation"
+import Cmp from "./base-component"
 
 export class ProjectInput extends Cmp<HTMLDivElement, HTMLFormElement> {
   titleInputElement: HTMLInputElement
