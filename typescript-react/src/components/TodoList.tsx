@@ -1,3 +1,5 @@
+import "./TodoList.css"
+
 interface Props {
   items: { id: string; text: string }[]
   onDeleteTodo: (id: string) => void
