@@ -1,4 +1,4 @@
-import React from "react"
+import NewTodo from "./components/NewTodo"
 import TodoList from "./components/TodoList"
 
 function App(): JSX.Element {
@@ -6,6 +6,7 @@ function App(): JSX.Element {
 
   return (
     <div className="App">
+      <NewTodo />
       <TodoList items={todos} />
     </div>
   )
